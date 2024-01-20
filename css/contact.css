@@ -88,6 +88,7 @@ body {
 .tel{
   width: 28%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  background-color: aqua;
 }
 
 .fa-solid,
@@ -124,4 +125,33 @@ display: flex;
   text-align: center;
   padding: 2rem;
   margin-top: 3rem;
+}
+
+@media screen and (max-width:760px) {
+  .navbar {
+  display: grid;
+  text-align: center;
+  justify-content:center ;
+  }    
+
+  .navbar li{
+    margin-left: 30px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .nav-list{
+    margin-top: 20px;
+  }
 }
